@@ -6,27 +6,26 @@ body
 {
     font-family: 'Permanent Marker', cursive;
     background-color: rgb(109, 109, 109);
-    
 }
 .container
 {
     text-align: center;
-    margin-top: 4%;
-    
+    margin: 4% auto 0 auto;
+    width: 70vw;
 }
 .allbox
 {
     justify-content: center;
     display: grid;
-    grid-template-columns: repeat(3,8vw);
-    grid-template-rows: repeat(3,8vw);
+    grid-template-columns: repeat(3,10vw);
+    grid-template-rows: repeat(3,10vw);
     font-size: 5rem;
     color: #e7c710;
+    width: 70vw;
 }
 .box
 {
     border: 4px solid ;
-    padding: 3%;
     border-left: none;
     border-top: none;
 }
@@ -38,24 +37,74 @@ body
 {
     border-bottom: none;
 }
+.inbox
+{
+    font-size: 4rem;
+}
 .result
 {
     margin-top: 2%;
     color: #e7c710;
     text-shadow: 2px 2px 6px black;
-    font-size: 4rem;
+    font-size: 3.5rem;
 }
 .restart
 {
-    width: 10vw;
-    height: 6vh;
-    font-size: 2rem;
-    font-style: italic;
+    width: 200px;
+    height: 40px;
+    font-size: 1.7rem;
     border-radius: 10px;
+    font-style: italic;
+    font-weight: 600;
     box-shadow: 2px 2px 6px black;
     background-color: #e7c710;
 }
 .disabled
 {
     pointer-events: none;
+}
+@media (max-width:1155px)
+{
+     *
+    {
+        font-size: 90%;
+    }
+    .allbox
+    {
+    grid-template-columns: repeat(3,15vw);
+    grid-template-rows: repeat(3,15vw)
+    }
+    .container
+    {
+        margin-top: 10%;
+    }
+}
+#footer
+{
+    padding-top:5%;
+    text-align: center;
+    font-family: 'Courier New', Courier, monospace;
+    color: #e7c710;
+    font-size: 1.5rem;
+}
+.winner
+{
+    color: rgb(116, 240, 14);
+    text-shadow: 2px 2px 6px aqua;
+}
+@media (max-width:815px)
+{
+    *
+    {
+        font-size: 80%;
+    }
+    .allbox
+    {
+    grid-template-columns: repeat(3,20vw);
+    grid-template-rows: repeat(3,20vw)
+    }
+    .container
+    {
+        margin-top: 10%;
+    }
 }
